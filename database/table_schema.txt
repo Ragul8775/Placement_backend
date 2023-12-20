@@ -1,0 +1,23 @@
+CREATE TABLE `placement_employee`.`2023` (
+  `s.no` INT NOT NULL AUTO_INCREMENT,
+  `reg.no` VARCHAR(45) NOT NULL,
+  `full_name` VARCHAR(45) NULL,
+  `gender` VARCHAR(45) NOT NULL,
+  `nri` VARCHAR(45) NULL,
+  `dob` VARCHAR(45) NULL,
+  `specialization` VARCHAR(45) NULL,
+  `section` VARCHAR(45) NOT NULL,
+  `srm_mail` VARCHAR(45) NOT NULL,
+  `personal_mail` VARCHAR(45) NULL,
+  `mobile_no` VARCHAR(45) NOT NULL,
+  `alternative_no` VARCHAR(45) NULL,
+  `father_no` VARCHAR(45) NULL,
+  `father_mail` VARCHAR(45) NULL,
+  `mother_no` VARCHAR(45) NULL,
+  `mother_mail` VARCHAR(45) NULL,
+  `guardian_no` VARCHAR(45) NULL,
+  `fa` VARCHAR(45) NOT NULL,
+  `languages` VARCHAR(45) NULL,
+  PRIMARY KEY (`s.no`, `reg.no`),
+  UNIQUE INDEX `reg_no_UNIQUE` (`reg.no` ASC)  -- Removed VISIBLE
+);
